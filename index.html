@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мое IT-резюме</title>
+    <!-- Подключаем шрифты и иконки -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Контейнер для всей страницы -->
+    <div class="main-container">
+
+        <!-- Навигация -->
+        <header class="header">
+            <nav class="navbar">
+                <h1 class="logo" id="headerText">Мое IT-резюме</h1>
+                <ul class="nav-links">
+                    <li><a href="#block1">Профиль</a></li>
+                    <li><a href="#block2">Опыт</a></li>
+                    <li><a href="#block3">Навыки</a></li>
+                    <li><a href="#block4">Проекты</a></li>
+                    <li><a href="#block5">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основной контент сайта -->
+        <main class="container">
+            <section class="block" id="block1">
+                <div class="block-data">
+                    <h2>Личные данные</h2>
+                    <p>Фамилия: Люлько</p>
+                    <p>Имя: Максим</p>
+                    <p>Отчество: Викторович</p>
+                    <p>Дата рождения: 15.07.2005</p>
+                    <p>Город: Московская область, Жуковский</p>
+                    <p>Готов к переезду: Нет</p>
+                    <p>Готов к командировкам: Нет</p>
+                    <p>Удаленная работа: Да</p>
+
+                </div>
+                <div class="block-photo">
+                    фото
+                </div>
+       
+
+            </section>
+            <!-- Блок 1: О себе -->
+            <!-- <section class="block" id="block1">
+                <h2>О себе</h2>
+                <p>Меня зовут Максим, я начинающий IT-специалист и веб-разработчик с большим интересом к созданию современных и функциональных веб-сайтов и приложений. С 17 лет занимаюсь фрилансом и разработкой проектов для друзей и знакомых, чтобы улучшить свои навыки и создавать полезные решения.</p><br/>
+                <p>Уверенно владею HTML, CSS, JavaScript и Node.js. Имею опыт как фронт-энд, так и бэк-энд разработки, в том числе создание собственных баз данных на JSON. Люблю экспериментировать с новыми технологиями и постоянно совершенствовать свои навыки.</p>
+            </section> -->
+            
+
+            <!-- Блок 2: Опыт работы -->
+            <section class="block" id="block2">
+                <h2>Опыт работы</h2>
+                <div class="job">
+                    <h3>Фриланс — Веб-разработка</h3>
+                    <p><i>2019 - настоящее время</i></p>
+                    <ul>
+                        <li>Создавал сайты и веб-приложения для друзей, знакомых и небольших проектов.</li>
+                        <li>Разрабатывал адаптивные и интерактивные интерфейсы с использованием HTML, CSS и JavaScript.</li>
+                        <li>Реализовывал серверную часть с помощью Node.js, включая создание простых баз данных на JSON.</li>
+                        <li>Работал над улучшением пользовательского опыта и оптимизацией производительности сайтов.</li>
+                    </ul>
+                </div>
+            </section>
+            
+
+            <!-- Блок 3: Навыки -->
+            <section class="block" id="block3">
+                <h2>Навыки</h2>
+                <ul>
+                    <li><strong>Фронт-энд разработка:</strong> HTML, CSS, JavaScript (ES6+)</li>
+                    <li><strong>Бэк-энд разработка:</strong> Node.js, создание RESTful API</li>
+                    <li><strong>Работа с данными:</strong> JSON, SQL</li>
+                    <li><strong>Инструменты:</strong> Git, Webpack</li>
+                    <li><strong>Дополнительные навыки:</strong> адаптивная верстка, оптимизация производительности</li>
+                </ul>
+            </section>
+            
+
+            <!-- Блок 4: Проекты -->
+            <section class="block" id="block4">
+                <h2>Проекты</h2>
+                <div class="project">
+                    <h3>Проект: Персональный сайт-портфолио</h3>
+                    <p>Создал сайт-портфолио для демонстрации своих работ и навыков в веб-разработке, используя HTML, CSS и JavaScript. Реализовал адаптивный дизайн и интерактивные элементы с помощью анимаций на JavaScript.</p>
+                </div>
+                <div class="project">
+                    <h3>Проект: Мини-сайт для локального бизнеса</h3>
+                    <p>Разработал сайт для локального бизнеса, включая фронт-энд и бэк-энд части. Сайт включал форму обратной связи и простую систему управления контентом с базой данных на JSON.</p>
+                </div>
+            </section>
+            
+
+            <!-- Блок 5: Контакты -->
+            <section class="block" id="block5">
+                <h2>Контакты</h2>
+                <p><strong>Email:</strong> <a href="mailto:al3x.b0rn@yandex.ru" target="_blank">al3x.b0rn@yandex.ru</a></p>
+                <p><strong>Телефон:</strong> <a href="tel:79163573917">+7 (916) 357-39-17</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/VoronMaster" target="_blank">github.com/VoronMaster</a></p>
+            </section>
+        </main>
+
+        <!-- Кнопка для навигации между блоками -->
+         <div class="wrapper-nav-btn">
+            <button id="prev" class="navigation-button">&larr;</button>
+            <button id="next" class="navigation-button">&rarr;</button>
+         </div>
+       
+
+        <!-- Футер -->
+        <footer class="footer">
+            <p id="footerText">© 2024 Мое IT-резюме. Все права защищены. Псевдоним <a href="https://vk.com/hornymonster" target="_blank">Черный Ворон</a></p>
+        </footer>
+    </div>
+
+    <!-- Подключаем JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>
