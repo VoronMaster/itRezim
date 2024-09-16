@@ -1,17 +1,4 @@
-/* Общие стили */
-@keyframes typingHeader {
-    from { width: 0; }
-    to { width: 20%; }
-}
 
-@keyframes typingFooter {
-    from { width: 0; }
-    to { width: 100%; }
-}
-
-@keyframes blink {
-    50% { border-color: transparent; }
-}
 
 * {
     box-sizing: border-box;
@@ -37,6 +24,18 @@ a:hover {
     color: #00D1FF; /* цвет ссылок при наведении */
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -53,7 +52,6 @@ a:hover {
 .logo {
     overflow: hidden;
     white-space: nowrap;
-    animation: typingHeader 3.5s steps(30, end), blink 0.75s step-end infinite; /* Анимация печатания текста */
 }
 
 .header {
@@ -61,10 +59,11 @@ a:hover {
 }
 
 .footer {
+    opacity: 0; /* Изначально скрываем footer */
     flex-shrink: 0;
     overflow: hidden;
     white-space: nowrap;
-    animation: typingFooter 3.5s steps(30, end), blink 0.75s step-end infinite; /* Анимация печатания текста */
+    transition: opacity 0.5s ease-in-out; /* Добавляем плавный переход для появления */
 }
 
 .navbar {
@@ -95,6 +94,8 @@ a:hover {
     align-items: center;
     position: relative;
     overflow: hidden;
+    padding-top: 60px; /* Добавляем отступ сверху для header */
+    padding-bottom: 60px; /* Добавляем отступ снизу для footer */
 }
 
 .block {
@@ -138,6 +139,7 @@ a:hover {
     left: 0;
     padding: 0 20px;
     box-sizing: border-box;
+    z-index: 10; /* Увеличиваем z-index, чтобы кнопки не перекрывались */
 }
 
 .navigation-button {
@@ -161,6 +163,11 @@ a:hover {
 
 /* Адаптивные стили для мобильных устройств */
 @media (max-width: 768px) {
+
+    .container {
+        padding-top: 80px; /* Увеличиваем отступ сверху */
+        padding-bottom: 80px; /* Увеличиваем отступ снизу */
+    }
 
     .nav-links {
         flex-direction: row;
@@ -220,6 +227,11 @@ a:hover {
 /* Адаптивные стили для очень маленьких экранов */
 @media (max-width: 540px) {
 
+    .container {
+        padding-top: 100px; /* Увеличиваем отступ сверху */
+        padding-bottom: 100px; /* Увеличиваем отступ снизу */
+    }
+
     .navbar {
         display: flex;
         flex-direction: column;
@@ -243,6 +255,7 @@ a:hover {
         align-items: center;
         padding: 5px;
         font-size: 14px;
+        text-align: center;
     }
 
     .job, .project {

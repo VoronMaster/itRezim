@@ -18,14 +18,22 @@
         <!-- Навигация -->
         <header class="header">
             <nav class="navbar">
-                <h1 class="logo" id="headerText">Мое IT-резюме</h1>
-                <ul class="nav-links">
-                    <li><a href="#block1">Профиль</a></li>
-                    <li><a href="#block2">Опыт</a></li>
-                    <li><a href="#block3">Навыки</a></li>
-                    <li><a href="#block4">Проекты</a></li>
-                    <li><a href="#block5">Контакты</a></li>
-                </ul>
+                <div id="typed-strings1">
+                    <h1 class="logo" id="headerText">Мое IT-резюме</h1>
+                </div>
+                <div class="text-typing">
+                    <span id="typed1"></span>
+                </div>
+                <div class="navbar-links --hidden">
+                    <ul class="nav-links">
+                        <li><a href="#block1">Профиль</a></li>
+                        <li><a href="#block2">Опыт</a></li>
+                        <li><a href="#block3">Навыки</a></li>
+                        <li><a href="#block4">Проекты</a></li>
+                        <li><a href="#block5">Контакты</a></li>
+                    </ul>
+                </div>
+                
             </nav>
         </header>
 
@@ -47,17 +55,8 @@
                 <div class="block-photo">
                     фото
                 </div>
-       
-
             </section>
-            <!-- Блок 1: О себе -->
-            <!-- <section class="block" id="block1">
-                <h2>О себе</h2>
-                <p>Меня зовут Максим, я начинающий IT-специалист и веб-разработчик с большим интересом к созданию современных и функциональных веб-сайтов и приложений. С 17 лет занимаюсь фрилансом и разработкой проектов для друзей и знакомых, чтобы улучшить свои навыки и создавать полезные решения.</p><br/>
-                <p>Уверенно владею HTML, CSS, JavaScript и Node.js. Имею опыт как фронт-энд, так и бэк-энд разработки, в том числе создание собственных баз данных на JSON. Люблю экспериментировать с новыми технологиями и постоянно совершенствовать свои навыки.</p>
-            </section> -->
             
-
             <!-- Блок 2: Опыт работы -->
             <section class="block" id="block2">
                 <h2>Опыт работы</h2>
@@ -111,7 +110,7 @@
         </main>
 
         <!-- Кнопка для навигации между блоками -->
-         <div class="wrapper-nav-btn">
+         <div class="wrapper-nav-btn hidden">
             <button id="prev" class="navigation-button">&larr;</button>
             <button id="next" class="navigation-button">&rarr;</button>
          </div>
@@ -119,11 +118,17 @@
 
         <!-- Футер -->
         <footer class="footer">
-            <p id="footerText">© 2024 Мое IT-резюме. Все права защищены. Псевдоним <a href="https://vk.com/hornymonster" target="_blank">Черный Ворон</a></p>
+            <div id="typed-strings2">
+                <p id="footerText">© 2024 Мое IT-резюме. Все права защищены. Псевдоним <a href="https://vk.com/hornymonster" target="_blank">Черный Ворон</a></p>
+            </div>
+            <div class="text-typing">
+                <span id="typed2"></span>
+            </div>
         </footer>
     </div>
 
     <!-- Подключаем JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="index.js"></script>
 </body>
 </html>
