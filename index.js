@@ -9,6 +9,8 @@ const buttonsWrapper = document.querySelector('.wrapper-nav-btn'); // Конте
 
 
 
+
+
 let currentBlock = 0;
 let autoSwitch = true; // Флаг для автоматического переключения
 let blockInterval;
@@ -48,6 +50,8 @@ prevButton.addEventListener('click', () => {
     currentBlock = (currentBlock - 1 + blocks.length) % blocks.length; // Переход к предыдущему блоку
     showBlock(currentBlock);
 });
+
+
 
 // Переключение блоков при клике на ссылки навигации
 navLinks.forEach((link, index) => {

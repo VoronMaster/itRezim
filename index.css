@@ -36,6 +36,10 @@ a:hover {
     transition: opacity 0.5s ease-in-out, visibility 0s linear 0s;
 }
 
+.block-link-counter {
+    cursor: pointer;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -91,7 +95,7 @@ a:hover {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     position: relative;
     overflow: hidden;
     padding-top: 60px; /* Добавляем отступ сверху для header */
@@ -111,6 +115,7 @@ a:hover {
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
+
 #block1 {
     display: flex;
     justify-content: space-between;
@@ -128,6 +133,8 @@ a:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 .wrapper-nav-btn {
     display: flex;
